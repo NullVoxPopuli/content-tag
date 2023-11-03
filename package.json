@@ -1,0 +1,25 @@
+{
+  "name": "content-tag",
+  "description": "A rust program that uses a fork of swc to parse and transform Javascript containing the content-tag proposal",
+  "version": "1.1.2",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/embroider-build/content-tag"
+  },
+  "files": [
+    "standalone",
+    "node"
+  ],
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./node/content_tag.d.ts",
+      "default": "./node/content_tag.cjs"
+    },
+    "./standalone": {
+      "types": "./standalone/standalone.d.ts",
+      "import": "./standalone/standalone.js"
+    }
+  }
+}
